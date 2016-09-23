@@ -1,0 +1,180 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+body
+{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:0.825em;
+	color:#0B0B3B;
+	background-color:#A9F5BC;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Hyperlink Styles: */
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* Titulo interno Actividad No. 2 Creando la Plantilla para un OVA con HTML5 y CSS3 */
+	font-family:forte,"Tahoma",""arial", serif,Helvetica;
+	font-size:4em;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:2em;
+	font-weight:normal;
+	/* letter-spacing:0.01em;*/
+	text-transform:uppercase;
+}
+
+p{
+	font-size :12pt;
+        line-height:2em;
+	padding-bottom:2em;
+}
+
+/* La línea divisoria en el interior del artículo */
+.line{
+	
+	height:3px;
+	background-color:#FF0000;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+  
+ /* La línea divisoria en el interior del artículo color blanco con beisg*/
+
+div.article .line {	
+	background-color:#FFFFFF;
+	border-bottom-color:#BDBDBD;
+	margin:1.3em 0;
+}
+
+div.footer .line{
+	margin:2em 0;
+}
+   /* formato barra de menu- navegacion INICIO, LECTURAS, MULTIMEDIA, ACTIVIDADES, AUTORES   */
+	 
+div.nav{
+	background-color:#F7F2E0 repeat-x 50% 50% #A9E2F3;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:4em;
+	
+	border:1px solid #FFFF00;
+
+	-moz-box-shadow:0 1px 1px #0000FF;
+	-webkit-box-shadow:0 1px 1px #0000FF;
+	box-shadow:0 1px 1px #0000FF;
+}
+
+/* limpiar los flotadores */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+div.nav ul li{
+	display:inline;
+}
+
+div.nav ul li a,
+div.nav ul li a:visited{
+	color:#210B61;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+div.nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+div.nav, div.article, div.nav ul li a,div.figure{
+	/* esquinas redondeadas */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+/* Article styles: */
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+div.article{
+	background-color:#FF8000;
+	margin:3em 0;
+	padding:20px;
+	
+}
+
+div.figure{
+	border:2px solid #FA5858;
+	float:right;
+	height:360px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+div.figure:hover{
+	-moz-box-shadow:0 0 2px #210B61;
+	-webkit-box-shadow:0 0 2px #210B61;
+	box-shadow:0 0 2px #210B61;
+}
+
+div.figure img{
+	margin-left:-60px;
+}
+
